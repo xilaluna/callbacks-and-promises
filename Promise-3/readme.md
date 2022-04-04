@@ -44,7 +44,7 @@ greet('Your name')
 .catch(err => console.log(err))
 ```
 
-Notice the first `.then()` returns a promise that is handled with a `.then()` on the line below. The output of the first promise is passinto `uppercaser`.
+Notice the first `.then()` returns a promise that is handled with a `.then()` on the line below. The output of the first promise is pass into `uppercaser`.
 
 Notice there is only one `.catch()` at the end. 
 
