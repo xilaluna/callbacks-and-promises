@@ -9,4 +9,4 @@ p.catch() // runs when the promise rejects
 p.finally() // runs when the promise settles (either resolved or rejected)
 ```
 
-Quick review: 
+Using the waht to eat example, add code to resolve and reject your promise, also handle all cases with finally. When you "finally" resolve this promise print "back to work" in the console!
