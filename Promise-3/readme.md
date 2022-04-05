@@ -44,9 +44,9 @@ greet('Your name')
 .catch(err => console.log(err))
 ```
 
-Notice the first `.then()` returns a promise that is handled with a `.then()` on the line below. The output of the first promise is pass into `uppercaser`.
+Notice the first `.then()` returns a promise that is handled with a `.then()` on the line below. The output of the first promise is passed into `uppercaser`.
 
-Notice there is only one `.catch()` at the end. 
+Notice there there is a `.then()` to handle each promise but, there is only a single `.catch()` at the end. This is one of the advantages of using Promises over traditional callbacks. 
 
 **Challenge!** Get `greet` to fail by passing providing a non-string argument.
 
@@ -54,4 +54,4 @@ Notice there is only one `.catch()` at the end.
 
 Note! In both cases the promise skips to the single catch block at the end! 
 
-Rule: You can chain functions that return a promise. When chaning promises if any promise along the way rejects all of the promsies reject!
+Rule: You can chain functions that return a promise. When chaining promises if any promise along the way rejects all of the promises reject and you skip the catch callback. 
